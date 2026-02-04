@@ -1,0 +1,13 @@
+// apps/admin/tsconfig.json
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@packages/ui": ["../../packages/ui/src"],
+      "@packages/ui/*": ["../../packages/ui/src/*"]
+    }
+  },
+  "include": ["src"]
+}
