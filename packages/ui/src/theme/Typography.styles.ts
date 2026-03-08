@@ -6,6 +6,7 @@ export const textStyles = defineTextStyles({
       fontSize: "2xl",
       fontWeight: "bold",
       fontFamily: "heading",
+      color: "brand.text.primary"
     },
   },
   h2: {
@@ -13,20 +14,23 @@ export const textStyles = defineTextStyles({
       fontSize: "xl",
       fontWeight: "bold",
       fontFamily: "heading",
+      color: "brand.text.primary"
     },
   },
   h3: {
     value: {
       fontSize: "lg",
-      fontWeight: "semibold",
+      fontWeight: "bold",
       fontFamily: "heading",
+      color: "brand.text.primary"
     },
   },
   h4: {
     value: {
       fontSize: "md",
-      fontWeight: "semibold",
+      fontWeight: "medium",
       fontFamily: "heading",
+      color: "brand.text.primary"
     },
   },
   body: {
@@ -34,6 +38,7 @@ export const textStyles = defineTextStyles({
       fontSize: "md",
       fontWeight: "normal",
       fontFamily: "body",
+      color: "brand.text.secondary"
     },
   },
   "body-sm": {
@@ -41,13 +46,15 @@ export const textStyles = defineTextStyles({
       fontSize: "sm",
       fontWeight: "normal",
       fontFamily: "body",
-    },
+      color: "brand.text.secondary"
   },
+},
   caption: {
     value: {
       fontSize: "xs",
       fontWeight: "normal",
       fontFamily: "body",
+      color: "brand.text.disabled"
     },
   },
   overline: {
@@ -56,6 +63,22 @@ export const textStyles = defineTextStyles({
       fontWeight: "normal",
       fontFamily: "body",
       textTransform: "uppercase",
+    },
+  },
+  error: {
+    value: {
+      fontSize: "2xs",
+      fontWeight: "normal",
+      fontFamily: "body",
+      color: "brand.error.500",
+    },
+  },
+  success: {
+    value: {
+      fontSize: "2xs",
+      fontWeight: "normal",
+      fontFamily: "mono",
+      color: "brand.success.500",
     },
   },
 })
