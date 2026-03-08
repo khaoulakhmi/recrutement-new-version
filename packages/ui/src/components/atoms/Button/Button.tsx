@@ -28,7 +28,7 @@ const Button = ({
     const buttonStyles = {
         primary: {
             bg: "brand.primary.500",
-            color: "white",
+            color: "brand.text.light",
             _hover: {
             bg: "brand.primary.700",
             },
@@ -141,7 +141,7 @@ const Button = ({
 
     return (
         <ChakraButton
-        borderRadius={"md"}
+            borderRadius={"md"}
             {...buttonStyles[variant]}
             size={size}
             {...props}
