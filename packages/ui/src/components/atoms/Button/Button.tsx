@@ -141,10 +141,10 @@ const Button = ({
 
     return (
         <ChakraButton
+        borderRadius={"md"}
             {...buttonStyles[variant]}
             size={size}
             {...props}
-            // borderRadius={"xl"}
         >
             {children}
         </ChakraButton>

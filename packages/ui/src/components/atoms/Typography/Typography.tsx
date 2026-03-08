@@ -2,7 +2,7 @@ import {
   Text as ChakraText,
   TextProps as ChakraTextProps,
 } from "@chakra-ui/react"
-import { system } from "../theme"
+import { system } from "../../../theme"
 
 export type TypographyVariants =
   | "h1"
@@ -13,13 +13,15 @@ export type TypographyVariants =
   | "body-sm"
   | "caption"
   | "overline"
+  | "error"
+  | "success"
 
 interface TypographyProps extends ChakraTextProps {
   variant?: TypographyVariants
 }
 
 const Typography = ({ variant = "body", ...props }: TypographyProps) => {
-  return <ChakraText textStyle={variant} {...props} />
+  return <ChakraText textStyle={variant}  {...props} />
 }
 
 export default Typography
