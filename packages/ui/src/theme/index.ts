@@ -48,6 +48,7 @@ const config = defineConfig({
             primary: { value: "#171923" },   // dark text
             secondary: { value: "#4A5568" }, // muted text
             disabled: { value: "#A0AEC0" },  // disabled / placeholder text
+            light: { value: "#F7FAFC" },     // light text (for dark backgrounds)
           },
           warning: {
             50: { value: "#FFF8E1" },
