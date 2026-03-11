@@ -26,10 +26,11 @@ const Input = ({
         borderRadius="lg"
         bg="white"
         px={3.5}
+        py={"8px"}
         minH="10"
         transition="all 0.2s ease"
         _hover={{
-          borderColor: "brand.neutral.400",
+          borderColor: "brand.neutral.600",
         }}
         _focusWithin={{
           borderWidth: "1.5px",
@@ -57,8 +58,7 @@ const Input = ({
           _focus={{ boxShadow: "none" }}
           _focusVisible={{ boxShadow: "none" }}
           _placeholder={{ color: "brand.text.disabled" }}
-          px={2}
-          py={1}
+          px={"8px"}
           {...props}
         />
 
