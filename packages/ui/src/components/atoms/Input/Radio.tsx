@@ -35,6 +35,12 @@ const Radio = ({
             borderColor: "brand.accent.500",
             color: "white",
           },
+          _disabled: {
+            bg: "brand.accent.500",
+            borderColor: "brand.accent.500",
+            color: "white",
+            opacity: 0.4,
+          },
         };
 
       case "outline":
@@ -50,6 +56,12 @@ const Radio = ({
             color: "brand.accent.500",
             
             },
+          _disabled: {
+            bg: "transparent",
+            borderColor: "brand.accent.500",
+            color: "brand.accent.500",
+            opacity: 0.4,
+          },
         };
 
       case "subtle":
@@ -61,6 +73,11 @@ const Radio = ({
           _checked: {
             bg: "brand.accent.100",
             borderColor: "brand.accent.100",
+          },
+          _disabled: {
+            bg: "brand.accent.100",
+            borderColor: "brand.accent.100",
+            opacity: 0.4,
           },
         };
       case "error":
@@ -74,6 +91,12 @@ const Radio = ({
             borderColor: "red.500",
             color: "white",
             borderWidth: 2,
+          },
+          _disabled: {
+            bg: "brand.error.100",
+            borderColor: "brand.error.500",
+            color: "white",
+            opacity: 0.4,
           },
         };
       default:
