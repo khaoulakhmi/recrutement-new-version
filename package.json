@@ -11,19 +11,29 @@
   "scripts": {
     "dev": "pnpm -r dev",
     "build": "pnpm -r build",
-    "lint": "pnpm -r lint"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.28.2",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
   "dependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "@packages/ui": "workspace:*" 
+    "@packages/ui": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^19.2.10",
-    "@types/react-dom": "^19.2.3"
+    "@types/react-dom": "^19.2.3",
+    "@packages/config": "workspace:*",
+    "eslint": "^10.14.0",
+    "prettier": "3.9.10",
+    "typescript": "^5.9.3"
   }
 }
