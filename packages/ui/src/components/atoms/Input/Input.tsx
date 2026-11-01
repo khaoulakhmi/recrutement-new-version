@@ -35,7 +35,7 @@ const Input = ({
         _focusWithin={{
           borderWidth: "1.5px",
           borderColor: "brand.neutral.700",
-          boxShadow: "0 0 0 1px var(--colors-brand-primary-500)",
+          boxShadow: "0 0 0 1px var(--chakra-colors-brand-primary-500)",
         }}
       >
         {leftIcon && (
