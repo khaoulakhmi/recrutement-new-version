@@ -11,11 +11,7 @@ interface BaseInputProps extends ChakraInputProps {
   rightIcon?: ReactNode;
 }
 
-const Input = ({
-  leftIcon,
-  rightIcon,
-  ...props
-}: BaseInputProps) => {
+const Input = ({ leftIcon, rightIcon, ...props }: BaseInputProps) => {
   return (
     <Box width={props.width}>
       <HStack
@@ -39,12 +35,7 @@ const Input = ({
         }}
       >
         {leftIcon && (
-          <Box
-            color="brand.neutral.400"
-            display="flex"
-            alignItems="center"
-            flexShrink={0}
-          >
+          <Box color="brand.neutral.400" display="flex" alignItems="center" flexShrink={0}>
             {leftIcon}
           </Box>
         )}
@@ -63,12 +54,7 @@ const Input = ({
         />
 
         {rightIcon && (
-          <Box
-            color="brand.neutral.400"
-            display="flex"
-            alignItems="center"
-            flexShrink={0}
-          >
+          <Box color="brand.neutral.400" display="flex" alignItems="center" flexShrink={0}>
             {rightIcon}
           </Box>
         )}

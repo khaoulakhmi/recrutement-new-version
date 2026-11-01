@@ -14,6 +14,7 @@
 ## 2️⃣ Authentication
 
 ### Login Page
+
 - [ ] Create Login page
 - [ ] Add email input
 - [ ] Add password input
@@ -48,6 +49,7 @@
 ## 5️⃣ Job Management
 
 ### Create Job
+
 - [ ] Create CreateJob page
 - [ ] Add title input
 - [ ] Add description textarea
@@ -56,6 +58,7 @@
 - [ ] Connect POST endpoint
 
 ### Jobs Table
+
 - [ ] Fetch jobs list
 - [ ] Display jobs in table
 - [ ] Add edit button

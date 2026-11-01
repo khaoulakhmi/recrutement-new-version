@@ -16,11 +16,13 @@
 ## 2️⃣ Database Models
 
 ### User
+
 - [ ] Create User model
 - [ ] Add role field (ADMIN / CANDIDATE)
 - [ ] Add password hashing
 
 ### Job
+
 - [ ] Create Job model
 - [ ] Add title
 - [ ] Add description
@@ -28,6 +30,7 @@
 - [ ] Add createdAt
 
 ### Application
+
 - [ ] Create Application model
 - [ ] Add status field
 - [ ] Connect to User

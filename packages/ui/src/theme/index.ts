@@ -1,10 +1,9 @@
-import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react"
-import '@fontsource/cairo/400.css';
-import '@fontsource/cairo/700.css';
-import '@fontsource/tajawal/400.css';
-import '@fontsource/tajawal/700.css';
+import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react";
+import "@fontsource/cairo/400.css";
+import "@fontsource/cairo/700.css";
+import "@fontsource/tajawal/400.css";
+import "@fontsource/tajawal/700.css";
 import { textStyles } from "./Typography.styles";
-
 
 const config = defineConfig({
   theme: {
@@ -12,32 +11,32 @@ const config = defineConfig({
       colors: {
         brand: {
           primary: {
-            50:  { value: "#FFD6DA" }, // very light red (lighter than #F20530)
+            50: { value: "#FFD6DA" }, // very light red (lighter than #F20530)
             100: { value: "#FFA1A9" },
             300: { value: "#F24858" },
             500: { value: "#F20530" }, // your original red
             700: { value: "#A5011E" }, // darker red
           },
           secondary: {
-            50:  { value: "#E8F6F5" }, // very light teal
+            50: { value: "#E8F6F5" }, // very light teal
             100: { value: "#A7D5D1" },
             300: { value: "#4AA88E" },
             500: { value: "#2B8C27" }, // medium green (your color)
             700: { value: "#1F631A" }, // darker green
           },
           accent: {
-            50:  { value: "#E6F6E8" }, // pale green
+            50: { value: "#E6F6E8" }, // pale green
             100: { value: "#B9E3B6" },
             300: { value: "#81CB7D" },
             500: { value: "#257322" }, // dark green (your color)
             700: { value: "#1B4E18" }, // darker accent green
           },
           neutral: {
-            50: { value: "#F7FAFC" },   // very light gray (default bg)
+            50: { value: "#F7FAFC" }, // very light gray (default bg)
             100: { value: "#EDF2F7" },
             200: { value: "#E2E8F0" },
             300: { value: "#CBD5E0" },
-            400: { value: "#A0AEC0" },   // mid gray
+            400: { value: "#A0AEC0" }, // mid gray
             500: { value: "#718096" },
             600: { value: "#4A5568" },
             700: { value: "#2D3748" },
@@ -45,23 +44,23 @@ const config = defineConfig({
             900: { value: "#171923" },
           },
           text: {
-            primary: { value: "#171923" },   // dark text
+            primary: { value: "#171923" }, // dark text
             secondary: { value: "#4A5568" }, // muted text
-            disabled: { value: "#A0AEC0" },  // disabled / placeholder text
-            light: { value: "#F7FAFC" },     // light text (for dark backgrounds)
+            disabled: { value: "#A0AEC0" }, // disabled / placeholder text
+            light: { value: "#F7FAFC" }, // light text (for dark backgrounds)
           },
           warning: {
             50: { value: "#FFF8E1" },
-            500: { value: "#D69E2E" },  // Chakra's default yellow.500
+            500: { value: "#D69E2E" }, // Chakra's default yellow.500
             700: { value: "#B7791F" },
           },
           error: {
             50: { value: "#FFF5F5" },
-            500: { value: "#E53E3E" },  // Chakra's default red.500
+            500: { value: "#E53E3E" }, // Chakra's default red.500
             700: { value: "#C53030" },
           },
           success: {
-            50: { value: "#CFF2C9" },  // your pale green (#CFF2C9)
+            50: { value: "#CFF2C9" }, // your pale green (#CFF2C9)
             500: { value: "#2B8C27" }, // your medium green (#2B8C27)
             700: { value: "#1F5E18" }, // darker success green
           },
@@ -80,7 +79,7 @@ const config = defineConfig({
         xl: { value: "1.25rem" },
         "2xl": { value: "1.5rem" },
         "3xl": { value: "1.875rem" },
-        "4xl": { value: "2.25rem" }
+        "4xl": { value: "2.25rem" },
       },
       fontWeights: {
         normal: { value: "400" },
@@ -107,8 +106,8 @@ const config = defineConfig({
         none: { value: "none" },
       },
     },
-    textStyles: textStyles
+    textStyles: textStyles,
   },
-})
+});
 
-export const system = createSystem(defaultConfig, config)
+export const system = createSystem(defaultConfig, config);

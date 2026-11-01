@@ -1,13 +1,8 @@
 import React from "react";
-import {
-  Checkbox as ChakraCheckbox,
-  Box,
-  VStack,
-} from "@chakra-ui/react";
+import { Checkbox as ChakraCheckbox, Box, VStack } from "@chakra-ui/react";
 import Typography from "../Typography/Typography";
 
-export interface CheckboxProps
-  extends React.ComponentPropsWithoutRef<typeof ChakraCheckbox.Root> {
+export interface CheckboxProps extends React.ComponentPropsWithoutRef<typeof ChakraCheckbox.Root> {
   label?: string;
   helperText?: string;
   error?: string;
@@ -29,7 +24,7 @@ const Checkbox = ({ label, helperText, error, required, ...rest }: CheckboxProps
           bg={hasError ? "brand.error.50" : "brand.accent.50"}
           transition="all 0.2s ease"
           _hover={{
-            boxShadow: hasError 
+            boxShadow: hasError
               ? "0 0 0 1px var(--chakra-colors-brand-error-300)"
               : "0 0 0 1px var(--chakra-colors-brand-accent-300)",
           }}
@@ -60,14 +55,21 @@ const Checkbox = ({ label, helperText, error, required, ...rest }: CheckboxProps
           <ChakraCheckbox.Label>
             <Typography variant="body" color="inherit">
               {label}
-              {required && <Typography as="span" color="brand.error.500"> *</Typography>}
+              {required && (
+                <Typography as="span" color="brand.error.500">
+                  {" "}
+                  *
+                </Typography>
+              )}
             </Typography>
           </ChakraCheckbox.Label>
         )}
       </ChakraCheckbox.Root>
 
       {(helperText || error) && (
-        <Box ml="6" mt="1"> {/* Changed from mr to ml, adjusted spacing */}
+        <Box ml="6" mt="1">
+          {" "}
+          {/* Changed from mr to ml, adjusted spacing */}
           <Typography variant={hasError ? "error" : "caption"}>
             {hasError ? error : helperText}
           </Typography>
