@@ -28,6 +28,7 @@ const config = defineConfig({
           accent: {
             50:  { value: "#E6F6E8" }, // pale green
             100: { value: "#B9E3B6" },
+            200: { value: "#9DD79A" },
             300: { value: "#81CB7D" },
             500: { value: "#257322" }, // dark green (your color)
             700: { value: "#1B4E18" }, // darker accent green
@@ -57,6 +58,8 @@ const config = defineConfig({
           },
           error: {
             50: { value: "#FFF5F5" },
+            100: { value: "#FED7D7" },
+            300: { value: "#FC8181" },
             500: { value: "#E53E3E" },  // Chakra's default red.500
             700: { value: "#C53030" },
           },
