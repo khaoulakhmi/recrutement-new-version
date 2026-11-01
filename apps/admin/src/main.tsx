@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import{ UIProvider } from "@packages/ui";
+import { UIProvider } from "@packages/ui";
 import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -8,5 +8,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <UIProvider>
       <App />
     </UIProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

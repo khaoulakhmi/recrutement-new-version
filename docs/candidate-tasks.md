@@ -5,6 +5,7 @@
 ## 1️⃣ Authentication
 
 ### Register
+
 - [ ] Create Register page
 - [ ] Add name field
 - [ ] Add email field
@@ -14,6 +15,7 @@
 - [ ] Connect API
 
 ### Login
+
 - [ ] Create Login page
 - [ ] Connect API
 - [ ] Store token
@@ -35,6 +37,7 @@
 ## 3️⃣ Jobs
 
 ### Job Listing
+
 - [ ] Fetch jobs
 - [ ] Display job cards
 - [ ] Add search input
@@ -42,6 +45,7 @@
 - [ ] Add pagination
 
 ### Job Details
+
 - [ ] Create JobDetails page
 - [ ] Display job info
 - [ ] Add Apply button

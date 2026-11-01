@@ -2,13 +2,31 @@
   "name": "@packages/config",
   "version": "0.0.1",
   "private": true,
-  "description": "",
-  "main": "index.js",
+  "description": "Shared ESLint and Prettier configuration for the recruitment workspace",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --no-error-on-unmatched-pattern"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.28.2"
+  "packageManager": "pnpm@10.28.2",
+  "type": "module",
+  "exports": {
+    "./eslint": "./eslint/base.mjs",
+    "./eslint/react": "./eslint/react.mjs",
+    "./eslint/node": "./eslint/node.mjs",
+    "./prettier": "./prettier.mjs"
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^16.5.0",
+    "typescript-eslint": "^8.72.1"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.9.3"
+  }
 }

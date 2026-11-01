@@ -1,10 +1,5 @@
-import {
-  RadioGroup as ChakraRadio,
-  RadioGroupRootProps,
-  Stack,
-} from "@chakra-ui/react";
+import { RadioGroup as ChakraRadio, RadioGroupRootProps, Stack } from "@chakra-ui/react";
 import Typography from "../Typography/Typography";
-
 
 type RadioVariant = "solid" | "outline" | "subtle" | "error";
 
@@ -14,16 +9,8 @@ interface RadioProps extends Omit<RadioGroupRootProps, "variant"> {
   error?: boolean;
 }
 
-const Radio = ({
-  items,
-  variant = "solid",
-  error = false,  
-  ...props
-}: RadioProps) => {
-  
-  const getVariantStyles = (
-    variant: RadioVariant
-  ) => {
+const Radio = ({ items, variant = "solid", error = false, ...props }: RadioProps) => {
+  const getVariantStyles = (variant: RadioVariant) => {
     switch (variant) {
       case "solid":
         return {
@@ -54,8 +41,7 @@ const Radio = ({
             bg: "transparent",
             borderColor: "brand.accent.500",
             color: "brand.accent.500",
-            
-            },
+          },
           _disabled: {
             bg: "transparent",
             borderColor: "brand.accent.500",
@@ -110,12 +96,9 @@ const Radio = ({
     <ChakraRadio.Root {...props}>
       <Stack direction="row">
         {items?.map((item) => (
-          <ChakraRadio.Item
-            key={item.value}
-            value={item.value}  
-          >
+          <ChakraRadio.Item key={item.value} value={item.value}>
             <ChakraRadio.ItemHiddenInput size={10} />
-            <ChakraRadio.ItemIndicator {...variantStyles} />            
+            <ChakraRadio.ItemIndicator {...variantStyles} />
             <ChakraRadio.ItemText>
               <Typography variant="body" color={error ? "brand.error.500" : "brand.text.secondary"}>
                 {item.label}

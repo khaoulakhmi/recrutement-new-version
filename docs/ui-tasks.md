@@ -5,6 +5,7 @@
 # 1️⃣ Theme Foundation
 
 ## System Setup
+
 - [x] Create theme folder
 - [x] Create theme/index.ts
 - [x] Import defineConfig
@@ -17,6 +18,7 @@
 ---
 
 ## Colors
+
 - [x] Define brand.primary (5 shades)
 - [x] Define brand.secondary (5 shades)
 - [x] Define brand.accent
@@ -31,6 +33,7 @@
 ---
 
 ## Typography
+
 - [x] Install Cairo
 - [x] Install Tajawal
 - [x] Add fonts to tokens
@@ -42,6 +45,7 @@
 ---
 
 ## Shadows & Radius
+
 - [ ] Define xs shadow
 - [ ] Define sm shadow
 - [ ] Define md shadow
@@ -65,6 +69,7 @@
 # 3️⃣ Button Components
 
 ## Base Button
+
 - [x] Create components/Button folder
 - [x] Create Button.tsx
 - [x] Extend Chakra Button
@@ -74,6 +79,7 @@
 - [x] Export from index.ts
 
 ## Variants
+
 - [x] Create PrimaryButton
 - [x] Create SecondaryButton
 - [x] Create DangerButton
@@ -85,6 +91,7 @@
 # 4️⃣ Input Components
 
 ## TextInput
+
 - [ ] Create TextInput.tsx
 - [ ] Add label
 - [ ] Add helper text
@@ -93,17 +100,20 @@
 - [ ] Style focus state
 
 ## PasswordInput
+
 - [ ] Create PasswordInput
 - [ ] Add show/hide toggle
 - [ ] Add icon button
 - [ ] Test validation error
 
 ## TextArea
+
 - [ ] Create TextArea wrapper
 - [ ] Add label support
 - [ ] Add error state
 
 ## Select
+
 - [ ] Create Select component
 - [ ] Add label
 - [ ] Add placeholder
@@ -111,6 +121,7 @@
 - [ ] Style dropdown
 
 ## Checkbox
+
 - [x] Create Checkbox wrapper
 - [x] Add label
 - [x] Add checked state styling
@@ -118,6 +129,7 @@
 - [ ] Add group support (CheckboxGroup)
 
 ## Radio
+
 - [x] Create Radio wrapper
 - [ ] Add RadioGroup
 - [ ] Add label
@@ -125,6 +137,7 @@
 - [ ] Style selected state
 
 ## FileUpload
+
 - [ ] Create FileUpload
 - [ ] Add drag & drop area
 - [ ] Add preview file name
@@ -132,6 +145,7 @@
 - [ ] Add error state
 
 ## SearchBar
+
 - [ ] Create SearchBar component
 - [ ] Add search icon
 - [ ] Add clear button
@@ -143,12 +157,14 @@
 # 5️⃣ Data Display Components
 
 ## Avatar
+
 - [ ] Create Avatar wrapper
 - [ ] Add fallback initials
 - [ ] Add image support
 - [ ] Add size variants
 
 ## Badge
+
 - [ ] Create Badge component
 - [ ] Add success variant
 - [ ] Add pending variant
@@ -156,18 +172,21 @@
 - [ ] Add info variant
 
 ## Divider
+
 - [ ] Create Divider wrapper
 - [ ] Add horizontal variant
 - [ ] Add vertical variant
 - [ ] Add spacing options
 
 ## Tooltip
+
 - [ ] Create Tooltip wrapper
 - [ ] Add placement option
 - [ ] Add arrow
 - [ ] Test on button hover
 
 ## Toast
+
 - [ ] Create Toast helper function
 - [ ] Add success toast
 - [ ] Add error toast
@@ -175,6 +194,7 @@
 - [ ] Add custom duration
 
 ## Skeleton
+
 - [ ] Create Skeleton wrapper
 - [ ] Add text skeleton
 - [ ] Add card skeleton
@@ -185,21 +205,25 @@
 # 6️⃣ Table System
 
 ## Base Table
+
 - [ ] Create Table wrapper
 - [ ] Add striped variant
 - [ ] Add hover row style
 - [ ] Add responsive support
 
 ## TableRow
+
 - [ ] Create TableRow component
 - [ ] Add clickable row option
 - [ ] Add hover effect
 
 ## TableHeader
+
 - [ ] Create TableHeader wrapper
 - [ ] Add sortable column option
 
 ## Pagination
+
 - [ ] Create Pagination component
 - [ ] Add next/previous buttons
 - [ ] Add page numbers
@@ -211,6 +235,7 @@
 # 7️⃣ Layout Components
 
 ## Card
+
 - [ ] Create Card wrapper
 - [ ] Add header slot
 - [ ] Add footer slot
@@ -218,11 +243,13 @@
 - [ ] Add bordered variant
 
 ## Container
+
 - [ ] Create Container wrapper
 - [ ] Add maxWidth option
 - [ ] Add padding
 
 ## Section
+
 - [ ] Create Section component
 - [ ] Add title prop
 - [ ] Add spacing control
@@ -232,6 +259,7 @@
 # 8️⃣ Advanced Components
 
 ## Modal
+
 - [ ] Create Modal wrapper
 - [ ] Add header
 - [ ] Add body
@@ -239,12 +267,14 @@
 - [ ] Add close button
 
 ## ConfirmationDialog
+
 - [ ] Create ConfirmationDialog
 - [ ] Add confirm button
 - [ ] Add cancel button
 - [ ] Add loading state
 
 ## Stepper
+
 - [ ] Create Stepper component
 - [ ] Add active step state
 - [ ] Add completed step style
@@ -252,6 +282,7 @@
 - [ ] Add vertical layout
 
 ## Tabs
+
 - [ ] Create Tabs wrapper
 - [ ] Add tab list
 - [ ] Add tab panel
